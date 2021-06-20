@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="form">
+        <div class="main">
+    <div class="search-container">
+       <form action="/" method="POST">
+                <div>
+                <input width="100%" class="box" type="text" name="place" placeholder="Enter a place to get forcast..." name="search" id=""></div>
+               <div><input class="btn" type="submit" name="" id="" value="Search"></div>
+            </form> 
+            </div>
+          </div>
+          <div class="foot">
+            <% if(weather !== null){ %>
+                
+                <h4>  <%= weather %> </h4>
+                <h4> Relative Humidity is nearly  <%= humidity %> </p>
+				        <h4> Wind speed is approx. <%= wind %> </p>
+                <h4> Direction is wind <%= dir %> </p>
+                <h4> <%= desc %> </p>
+              <% } %>
+      
+              <% if(errMessage !== null){ %>
+                <p><%= errMessage %></p>
+              <% } %>
+            </div>
+    </div>
+
+</body>
+
+</html>

@@ -70,3 +70,29 @@ h4,p{
 p{
   font-size: 20px;
 }
+
+@media only screen   
+and (min-device-width : 360px)   
+and (max-device-width : 640px) {
+
+  body{
+    background-color: wheat;
+    padding: 0;
+    
+    margin: 0;
+  
+  }
+  .box {
+  width: 130px;
+  }
+
+  h4,p{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: whitesmoke;
+  }
+  .foot{
+    margin: 20px;
+  }
+  
+}
